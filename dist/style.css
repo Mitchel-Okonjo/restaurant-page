@@ -60,11 +60,6 @@ body {
   padding-bottom: 10px;
 }
 
-.nav-item:hover {
-  border-bottom: 2px solid white;
-  cursor: pointer;
-}
-
 .home {
   display: flex;
   flex-direction: column;
@@ -86,4 +81,21 @@ body {
   height: auto;
   align-self: center;
   margin: 1rem 0;
+}
+
+.nav-item {
+  transition: 50ms ease-in;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.nav-item:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.nav-item:hover {
+  transition: 50ms ease-in-out;
+  cursor: pointer;
+  transform: scale(1.2);
+  border-bottom: 2px solid white;
 }
