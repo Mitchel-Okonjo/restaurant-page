@@ -1,4 +1,4 @@
-import { createHeader } from "./home";
+// import { createHeader } from "./home";
 
 function setPrice(amount) {
   const price = document.createElement("div");
@@ -57,8 +57,8 @@ function createMenu() {
 
 function loadMenu() {
   const content = document.querySelector("#content");
-  const header = createHeader();
-  content.appendChild(header);
+  //   const header = createHeader();
+  //   content.appendChild(header);
   const menu = createMenu();
 
   for (let i = 0; i <= 5; i++) {
@@ -72,7 +72,6 @@ function loadMenu() {
 
     menu.appendChild(dish);
   }
-
   content.appendChild(menu);
 }
 

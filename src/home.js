@@ -12,6 +12,8 @@ function createNav() {
       ? (navItem.textContent = "Menu")
       : (navItem.textContent = "Contact");
 
+    if (i === 1) navItem.classList.add("active");
+
     navBar.appendChild(navItem);
   }
 
@@ -58,13 +60,19 @@ function createHomeContent() {
   return home;
 }
 
-function loadHome() {
+function loadHeader() {
   const content = document.querySelector("#content");
   const header = createHeader();
   content.appendChild(header);
+}
+
+function loadHome() {
+  const content = document.querySelector("#content");
+  //   const header = createHeader();
+  //   content.appendChild(header);
 
   const homeContent = createHomeContent();
   content.appendChild(homeContent);
 }
 
-export { loadHome, createHeader };
+export { loadHome, loadHeader };
