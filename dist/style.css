@@ -144,3 +144,18 @@
   font-size: 0.9rem;
   padding: 0px 20px;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  color: var(--title-color);
+  gap: 20px;
+  font-family: var(--main-font);
+  font-size: 1.3rem;
+}
+
+.contact img {
+  width: 650px;
+}
