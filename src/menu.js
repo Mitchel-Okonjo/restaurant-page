@@ -55,8 +55,6 @@ function createMenu() {
 
 function loadMenu() {
   const content = document.querySelector('#content');
-  //   const header = createHeader();
-  //   content.appendChild(header);
   const menu = createMenu();
 
   for (let i = 0; i <= 5; i++) {

@@ -39,9 +39,7 @@ function createContact() {
 function loadContact() {
   const content = document.querySelector('#content');
   const contact = createContact();
-  //   const header = createHeader();
 
-  //   content.appendChild(header);
   content.appendChild(contact);
 }
 
